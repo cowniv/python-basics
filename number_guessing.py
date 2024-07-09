@@ -12,3 +12,9 @@ def play():
         if not guess.isdigit():
             print("Please enter a whole number.")
             continue
+
+        attempts += 1
+        guess = int(guess)
+
+        if guess < secret:
+            print("Too low!")
