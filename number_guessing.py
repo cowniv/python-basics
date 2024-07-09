@@ -9,3 +9,6 @@ def play():
 
     while True:
         guess = input("Your guess: ").strip()
+        if not guess.isdigit():
+            print("Please enter a whole number.")
+            continue
