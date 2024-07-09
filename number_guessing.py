@@ -18,3 +18,8 @@ def play():
 
         if guess < secret:
             print("Too low!")
+        elif guess > secret:
+            print("Too high!")
+        else:
+            print(f"You got it in {attempts} tries!")
+            break
