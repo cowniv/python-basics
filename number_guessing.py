@@ -23,3 +23,7 @@ def play():
         else:
             print(f"You got it in {attempts} tries!")
             break
+
+
+if __name__ == "__main__":
+    play()
