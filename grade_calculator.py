@@ -11,3 +11,7 @@ def to_pup_grade(score):
         if score >= minimum:
             return grade
     return 5.00
+
+
+def compute_gwa(subjects):
+    total_units = sum(s["units"] for s in subjects)
