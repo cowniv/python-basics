@@ -7,3 +7,7 @@ def to_pup_grade(score):
         (97, 1.00), (94, 1.25), (91, 1.50), (88, 1.75), (85, 2.00),
         (82, 2.25), (79, 2.50), (76, 2.75), (75, 3.00),
     ]
+    for minimum, grade in scale:
+        if score >= minimum:
+            return grade
+    return 5.00
