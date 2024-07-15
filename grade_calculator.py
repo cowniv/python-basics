@@ -15,3 +15,5 @@ def to_pup_grade(score):
 
 def compute_gwa(subjects):
     total_units = sum(s["units"] for s in subjects)
+    weighted = sum(s["grade"] * s["units"] for s in subjects)
+    return weighted / total_units if total_units else 0
