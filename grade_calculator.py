@@ -22,3 +22,7 @@ def compute_gwa(subjects):
 def main():
     subjects = []
     count = int(input("How many subjects? "))
+
+    for i in range(count):
+        print(f"\nSubject {i + 1}")
+        name = input("  Name: ")
