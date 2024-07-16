@@ -26,3 +26,6 @@ def main():
     for i in range(count):
         print(f"\nSubject {i + 1}")
         name = input("  Name: ")
+        units = int(input("  Units: "))
+        score = float(input("  Final score (%): "))
+        subjects.append({"name": name, "units": units, "grade": to_pup_grade(score)})
