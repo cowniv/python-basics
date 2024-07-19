@@ -37,3 +37,9 @@ def main():
 
     gwa = compute_gwa(subjects)
     print(f"\nGWA: {gwa:.2f}")
+    if gwa <= 1.75 and all(s["grade"] <= 2.5 for s in subjects):
+        print("Congrats, you qualify for the Dean's List!")
+
+
+if __name__ == "__main__":
+    main()
