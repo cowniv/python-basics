@@ -34,3 +34,6 @@ def main():
     for s in subjects:
         status = "PASSED" if s["grade"] <= 3.0 else "FAILED"
         print(f"{s['name']:<20} {s['units']} units   {s['grade']:.2f}   {status}")
+
+    gwa = compute_gwa(subjects)
+    print(f"\nGWA: {gwa:.2f}")
