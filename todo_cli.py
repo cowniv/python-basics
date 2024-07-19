@@ -3,3 +3,8 @@ import json
 import os
 
 FILE = "todos.json"
+
+
+def load():
+    if not os.path.exists(FILE):
+        return []
