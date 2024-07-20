@@ -8,3 +8,5 @@ FILE = "todos.json"
 def load():
     if not os.path.exists(FILE):
         return []
+    with open(FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
