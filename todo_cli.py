@@ -15,3 +15,8 @@ def load():
 def save(todos):
     with open(FILE, "w", encoding="utf-8") as f:
         json.dump(todos, f, indent=2)
+
+
+def show(todos):
+    if not todos:
+        print("  (nothing to do!)")
