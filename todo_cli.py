@@ -20,3 +20,6 @@ def save(todos):
 def show(todos):
     if not todos:
         print("  (nothing to do!)")
+    for i, t in enumerate(todos, start=1):
+        mark = "x" if t["done"] else " "
+        print(f"  {i}. [{mark}] {t['task']}")
