@@ -23,3 +23,8 @@ def show(todos):
     for i, t in enumerate(todos, start=1):
         mark = "x" if t["done"] else " "
         print(f"  {i}. [{mark}] {t['task']}")
+
+
+def main():
+    todos = load()
+    menu = "\n[a]dd  [d]one  [r]emove  [l]ist  [q]uit"
