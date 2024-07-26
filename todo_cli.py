@@ -32,3 +32,6 @@ def main():
     while True:
         print(menu)
         choice = input("> ").lower().strip()
+
+        if choice == "a":
+            todos.append({"task": input("Task: "), "done": False})
