@@ -28,3 +28,7 @@ def show(todos):
 def main():
     todos = load()
     menu = "\n[a]dd  [d]one  [r]emove  [l]ist  [q]uit"
+
+    while True:
+        print(menu)
+        choice = input("> ").lower().strip()
