@@ -44,4 +44,4 @@ def main():
                 else:
                     todos.pop(idx)
             except (ValueError, IndexError):
-                pass
+                print("Invalid number.")
