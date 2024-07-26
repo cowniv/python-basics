@@ -39,5 +39,9 @@ def main():
             show(todos)
             try:
                 idx = int(input("Number: ")) - 1
+                if choice == "d":
+                    todos[idx]["done"] = True
+                else:
+                    todos.pop(idx)
             except (ValueError, IndexError):
                 pass
