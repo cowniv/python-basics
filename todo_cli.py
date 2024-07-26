@@ -35,3 +35,9 @@ def main():
 
         if choice == "a":
             todos.append({"task": input("Task: "), "done": False})
+        elif choice in ("d", "r"):
+            show(todos)
+            try:
+                idx = int(input("Number: ")) - 1
+            except (ValueError, IndexError):
+                pass
