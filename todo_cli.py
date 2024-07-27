@@ -45,3 +45,7 @@ def main():
                     todos.pop(idx)
             except (ValueError, IndexError):
                 print("Invalid number.")
+        elif choice == "l":
+            show(todos)
+        elif choice == "q":
+            break
