@@ -49,3 +49,9 @@ def main():
             show(todos)
         elif choice == "q":
             break
+
+        save(todos)
+
+
+if __name__ == "__main__":
+    main()
